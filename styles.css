@@ -12,40 +12,72 @@ body {
   color: #fff;
 }
 
-.head{
+.head {
   padding: 12px;
   display: flex;
   align-items: center;
-  gap:50%;
-  
+  justify-content: space-between; /* Espaço entre logo, conteúdo central e conteúdo da direita */
 }
-.head .nav-logo i {
+.head .head-logo i {
   font-size: 32px;
 }
-.head .search-bar {
-  font-size: 32px;
+
+.head .head-house {
+  font-size: 14px;
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: #242424;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.head-search-bar {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  background-color: #242424;
   padding: 8px;
   gap: 10px;
   border-radius: 20px;
 }
 
-.head .search-bar i{
+.head-search-bar i {
   font-size: 20px;
-  color: #242424;
+  color: #b7b3b6;
 }
 
-.head .search-bar input {
+.head-search-bar input {
   border: none;
-  
+  background-color: transparent;
+  color: #b7b3b6;
+  outline: none;
+}
+
+.head-login {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.head-login a {
+  text-decoration: none;
+  color: #b7b3b6;
+}
+
+.head-login button {
+  background-color: white;
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  color: #000;
 }
 .conteiner {
   display: flex;
   height: 100vh;
-  
-  
 }
 
 .sidebar {
@@ -56,9 +88,7 @@ body {
   flex-direction: column;
   gap: 20px;
   border-radius: 8px;
-
 }
-
 
 .nav-library {
   display: flex;
@@ -83,7 +113,8 @@ body {
   padding: 16px;
 }
 
-.nav-playlist p, .nav-podcast p{
+.nav-playlist p,
+.nav-podcast p {
   font-size: 12px;
 }
 
@@ -101,10 +132,9 @@ body {
 
 .nav-footer {
   margin-top: auto;
-  
 }
 
-.nav-footer a{
+.nav-footer a {
   color: #a7a7a7;
   text-decoration: none;
   font-size: 12px;
@@ -125,5 +155,46 @@ body {
   gap: 20px;
   align-items: center;
   justify-content: center;
+}
 
+main {
+  padding: 24px;
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: #121212;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.artists-grid,
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.artist-card,
+.album-card {
+  background-color: transparent;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: initial;
+  cursor: pointer;
+}
+
+.artist-card:hover,
+.album-card:hover {
+  background-color: #181818;
+  transition: background-color 0.3s;
+}
+
+.artist-card img,
+.album-card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.content h2 {
+  margin-bottom: 12px;
 }
