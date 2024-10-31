@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.head{
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap:50%;
+  
+}
+.head .nav-logo i {
+  font-size: 32px;
+}
+.head .search-bar {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px;
+  gap: 10px;
+  border-radius: 20px;
+}
+
+.head .search-bar i{
+  font-size: 20px;
+  color: #242424;
+}
+
+.head .search-bar input {
+  border: none;
+  
+}
+.conteiner {
+  display: flex;
+  height: 100vh;
+  
+  
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #121212;
+  padding: 24px 10px 90px 24px; /* cima, lado direito, baixo, lado esquerdo*/
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 8px;
+
+}
+
+
+.nav-library {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-library i {
+  color: #b7b3b6;
+  font-size: 20px;
+}
+
+.nav-library p {
+  color: #b7b3b6;
+  font-size: 20px;
+}
+
+.nav-playlist,
+.nav-podcast {
+  background-color: #242424;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.nav-playlist p, .nav-podcast p{
+  font-size: 12px;
+}
+
+.nav-playlist button,
+.nav-podcast button {
+  background-color: #fff;
+  color: #000;
+  padding: 6px 10px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.nav-footer {
+  margin-top: auto;
+  
+}
+
+.nav-footer a{
+  color: #a7a7a7;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 12px;
+  margin-bottom: 8px;
+}
+
+.nav-lang-button {
+  display: flex;
+  background-color: transparent;
+  border: 1px solid white;
+  color: #fff;
+  padding: 8px 12px; /* cima e baixo / lado dir e lado esqu*/
+  margin-top: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+}
