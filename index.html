@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clone-Spotify</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/efc1d5d3cf.js"
       crossorigin="anonymous"
@@ -12,11 +12,17 @@
     <!-- Esse trecho adiciona uma "biblioteca" de icones, sempre podemos importar icones igual foi feito na tag <i></i> -->
   </head>
   <body>
+    <div class="head">
+      <div class="nav-logo">
+        <i class="fa-brands fa-spotify"></i>
+      </div>
+      <header class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input placeholder="O que você quer ouvir?" />
+      </header>
+    </div>
     <div class="conteiner">
-      <nav>
-        <div class="nav-logo">
-          <i class="fa-brands fa-spotify"></i>
-        </div>
+      <nav class="sidebar">
         <div class="nav-library">
           <i class="fa-solid fa-book"></i>
           <p>Sua biblioteca</p>
@@ -29,7 +35,7 @@
         <div class="nav-podcast">
           <h5>Que tal seguir um Podcast?</h5>
           <p>Avisaremos você sobre nossos episódios</p>
-          <button>Explore Podcast</button>
+          <button>Explore Podcasts</button>
         </div>
         <div class="nav-footer">
           <a href="#"> Legal</a>
@@ -45,10 +51,6 @@
         </button>
       </nav>
       <main>
-        <header class="search-bar">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input placeholder="O que você quer ouvir?" />
-        </header>
         <!-- content = conteudo de artistas e musicas -->
         <section class="content">
           <h2>Artistas Populares</h2>
