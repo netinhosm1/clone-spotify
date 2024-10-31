@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "artista 4", image: "./img/Red.png" },
     { name: "artista 5", image: "./img/Red.png" },
     { name: "artista 6", image: "./img/Red.png" },
+    { name: "artista 5", image: "./img/Red.png" },
   ]
 
   const albumsData = [
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "album 4", artist: "Artista 4", image: "./img/quad-1.jpg" },
     { name: "album 5", artist: "Artista 5", image: "./img/quad-2.jpg" },
     { name: "album 6", artist: "Artista 6", image: "./img/quad-1.jpg" },
+    { name: "album 5", artist: "Artista 5", image: "./img/quad-2.jpg" },
   ]
 
   const artistGrid = document.querySelector(".artists-grid")
