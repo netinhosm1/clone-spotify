@@ -22,23 +22,28 @@ body {
   font-size: 32px;
 }
 
-.head .head-house {
-  font-size: 14px;
+.head-search-bar {
   display: flex;
   align-items: center;
-  background-color: #242424;
-  padding: 12px;
-  border-radius: 50%;
+  gap: 10px;
 }
 
-.head-search-bar {
-  width: 300px;
+.head #head-input {
+  width: 400px;
   display: flex;
   align-items: center;
   background-color: #242424;
   padding: 8px;
   gap: 10px;
   border-radius: 20px;
+}
+.head #head-input i {
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 0px 10px;
+}
+.head #head-input input {
+  margin: 0px 0px 0px 10px;
 }
 
 .head-search-bar i {
@@ -66,6 +71,11 @@ body {
   color: #b7b3b6;
 }
 
+.head-login a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
 .head-login button {
   background-color: white;
   padding: 12px;
@@ -74,6 +84,13 @@ body {
   cursor: pointer;
   border: none;
   color: #000;
+}
+
+.head-login button:hover {
+  background-color: rgb(3, 163, 3);
+
+  color: #ffffff;
+  transition: background-color 0.3s;
 }
 .conteiner {
   display: flex;
@@ -127,6 +144,15 @@ body {
   border: none;
   border-radius: 20px;
   font-size: 12px;
+  cursor: pointer;
+}
+
+.nav-playlist button:hover,
+.nav-podcast button:hover {
+  background-color: rgb(3, 163, 3);
+
+  color: #ffffff;
+  transition: background-color 0.3s;
   cursor: pointer;
 }
 
@@ -188,16 +214,15 @@ main {
   transition: background-color 0.3s;
 }
 
-.artist-card img
-{
+.artist-card img {
   width: 100%;
   border-radius: 50%;
   margin-bottom: 24px;
 }
 
 .album-card img {
-   width: 100%;
-   border-radius: 8px;
+  width: 100%;
+  border-radius: 8px;
   margin-bottom: 24px;
 }
 
