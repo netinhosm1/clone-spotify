@@ -13,7 +13,7 @@ Projeto proprio criado com a finalidade de treinar o conhecimento em JS, CSS, HT
 </p>
 
 <p align="center">
-  <img alt="Projeto clone do Spotify" src=".github/preview.PNG">
+  <img alt="Layout oficial do Spotify" src=".github/preview-original.PNG">
 </p>
 
 <br>
